@@ -8,23 +8,44 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(11,11,11);
 }
 
-.container{
-    max-width: 450px;
+.float-container{
+    padding: 50px;
+    align-content: center;
+}
+.float-container1{
+    padding: 100px;
+    align-content: center;
+}
+.float-child{
+    width: 100%;
+    background: #107171;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    padding: 50px;
+    border-end-end-radius: 2px solid orangered;
+}
+.float-child1{
+    width: 100%;
     background: #107171;
     border-radius: 8px;
     box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
     font-family: sans-serif;
-    padding: 20px;
+    padding: 50px;
+    border-end-end-radius: 2px solid orangered;
+
 }
-.title{
+
+.float-child1 title h1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 10px;
+    width: 400%;
 }
 
 .Temperature-icon{
@@ -32,10 +53,11 @@ body{
     color: #fff;
 }
 
-h1{
+.title h1{
     color: #fff;
     letter-spacing: 1.2px;
     font-size: 30px;
+    align-items: center;
 }
 
 #celcius, #fahrenheit, #kelvin{
@@ -64,7 +86,7 @@ input::-webkit-inner-spin-button{
 
 
 .icon{
-    flex-direction: 1;
+    flex-direction: 2;
     height: 60px;
     line-height: 60px;
     padding: 0 5px;
@@ -96,7 +118,20 @@ input::-webkit-inner-spin-button{
     background: #000;
     color: #fff;
 }
-
+title .Temperature-icon{
+    flex-direction: 2;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #2c363e;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+.float-child1, .title .h3{
+    align-items: center;
+}
 
 
 
